@@ -1,0 +1,9 @@
+version: '2'
+services:
+  apache-ldap:
+#    user: "1000000"
+    build: .
+    image: 1and1internet/apache-ldap
+    ports:
+      - "8080:80"
+      - "8443:443"
